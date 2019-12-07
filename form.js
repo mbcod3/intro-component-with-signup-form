@@ -19,8 +19,7 @@ for (let i = 0; i < 4; i++) {
   })
 }
 
-function check() {
-  console.log('e')
+document.getElementById('submit').addEventListener('click', () => {
   for (let i = 0; i < 4; i++) {
     if (!inputs[i].checkValidity()) {
       inputs[i].classList.add('input-error')
@@ -33,4 +32,4 @@ function check() {
       errs[i].classList.remove('err-msg-show')
     }
   }
-}
+})
