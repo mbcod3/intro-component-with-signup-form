@@ -16,7 +16,7 @@ section {
   display: flex;
   max-width: 1015px;
   margin: 0 auto;
-  min-height: 95vh;
+  min-height: 94vh;
   align-items: center;
 }
 
@@ -81,7 +81,6 @@ section {
 
 .trial-form input:focus {
   border: 1.5px solid hsla(248, 32%, 49%, 0.609);
-  /* box-shadow: 0 0 5px rgba(81, 203, 238, 1); */
 }
 
 .trial-form input[type="submit"] {
@@ -96,6 +95,7 @@ section {
 .trial-form input[type="submit"]:active,
 .trial-form input[type="submit"]:hover {
   background-color: hsl(154, 71%, 41%);
+  border-color: hsl(154, 79%, 35%);
 }
 
 .terms {
@@ -114,4 +114,50 @@ section {
 .terms a:hover,
 .terms a:active {
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 820px) {
+  .heading h1 {
+    font-size: 2rem;
+  }
+
+  .heading {margin-right: 15px;}
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    text-align: center;
+  }
+  section {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .cta {
+    padding: 25px 70px;
+  }
+  .trial-form {
+    padding: 30px 25px;
+  }
+  .trial-form input {
+    padding: 15px;
+  }
+  section {
+    margin: 10px
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  
+  .heading h1 {
+    font-size: 1.7rem;
+  }
+  .cta {
+    padding: 20px 50px;
+  }
+  .trial-form {
+    padding: 20px;
+  }
 }
