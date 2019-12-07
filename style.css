@@ -16,7 +16,7 @@ section {
   display: flex;
   max-width: 1015px;
   margin: 0 auto;
-  min-height: 94vh;
+  min-height: 92vh;
   align-items: center;
 }
 
@@ -82,7 +82,7 @@ section {
 
 .input-error {
   border: 1px solid hsl(0, 100%, 74%) !important;
-  background-image: url(/images/icon-error.svg);
+  background-image: url(images/icon-error.svg);
   background-repeat: no-repeat;
   background-position: right 5% center;
 }

@@ -20,7 +20,7 @@ for (let i = 0; i < 4; i++) {
 }
 
 function check() {
-
+  console.log('e')
   for (let i = 0; i < 4; i++) {
     if (!inputs[i].checkValidity()) {
       inputs[i].classList.add('input-error')
