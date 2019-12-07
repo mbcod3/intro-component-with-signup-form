@@ -26,12 +26,20 @@
     <div class="cta-form">
       <div class="cta">Try it free 7 days <span>then $20/mo. thereafter</span></div>
       <form class="trial-form">
-        <input type="text" placeholder="First Name" required>
-        <input type="text" placeholder="Last Name" required>
-        <input type="email" placeholder="Email Address" required>
-        <input type="password" placeholder="Password" required>
-        <input type="submit" value="CLAIM YOUR FREE TRIAL">
-        <p class="terms">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+        <input type="text" placeholder="First Name" id="first" required>
+        <p class="err-msg" id="first__err">First Name cannot be empty</p>
+
+        <input type="text" placeholder="Last Name" id="last" required>
+        <p class="err-msg" id="second__err">Last Name cannot be empty</p>
+
+        <input type="email" placeholder="Email Address" id="email" required>
+        <p class="err-msg" id="email__err">Looks like this is not an email</p>
+
+        <input type="password" placeholder="Password" id="pass" required>
+        <p class="err-msg" id="pass__err">password cannot be empty</p>
+
+        <input type="submit" value="CLAIM YOUR FREE TRIAL" onclick="check()">
+        <p class="terms">By clicking the button, you are agreeing to our <a href="#"> Terms and Services</a></p>
       </form>
     </div>
   </section>
@@ -43,5 +51,6 @@
       Coded by <a href="#">Muhammad Bilal</a>.
     </p>
   </footer>
+  <script src="/form.js"></script>
 </body>
 </html>
